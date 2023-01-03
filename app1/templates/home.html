@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <div style="display: flex;align-items: center;justify-content: center;">
+        
+    <form action="{% url 'marklist' %} " method="post" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">  
+        <label for="id_studentId">Studentid:</label>
+        <input type="text" name="studentId" maxlength="6" required="" id="id_studentId">
+        <label for="id_dob">Dob:</label>
+        <input type="date" name="dob" required="" id="id_dob">
+        {% csrf_token %}
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    
+</body>
+</html>
+</html>
