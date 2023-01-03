@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+8zrm@c!t!q-9t@9(nnf0ige2ou+1-4_v_b*1kt*^qru5ndgdf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['st    udentmarklist-production.up.railway.app','*']
+ALLOWED_HOSTS = ['studentmarklist-production.up.railway.app','*']
 
 
 # Application definition
@@ -123,4 +123,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['studentmarklist-production.up.railway.app','*']        
