@@ -123,4 +123,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['studentmarklist-production.up.railway.app','*']        
+CSRF_TRUSTED_ORIGINS = ['studentmarklist-production.up.railway.app','*','https://studentmarklist-production.up.railway.app']        
