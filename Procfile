@@ -1,0 +1,1 @@
+web : gunicorn studentmarklist.wsgi --log-file -
