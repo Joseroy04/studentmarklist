@@ -4,5 +4,5 @@ from django.contrib import admin
 from  .models import studentData,Pedagogy,Deportment
 
 admin.site.register(studentData)
-admin.site.register(Pedagogy)
 admin.site.register(Deportment)
+admin.site.register(Pedagogy)

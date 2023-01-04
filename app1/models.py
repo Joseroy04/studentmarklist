@@ -4,7 +4,7 @@ from django.db import models
 class Pedagogy(models.Model):
     subject = models.CharField(verbose_name="Pedagogy Subjects",max_length=30,null=False)
     class Meta:
-        verbose_name = ("Pedagogy Subjects")
+        verbose_name = ("Pedagogy Subject")
     def __str__(self):
         return self.subject
     
@@ -12,7 +12,7 @@ class Pedagogy(models.Model):
 class Deportment(models.Model):
     name = models.CharField(verbose_name="Deportment ",max_length=30,null=False)
     class Meta:
-        verbose_name = ("Deportment ")
+        verbose_name = ("Deportment List")
     def __str__(self):
         return self.name
     
@@ -70,8 +70,8 @@ class studentData(models.Model):
        
        super(studentData, self).save(*args, **kwargs) # Call the real save() method
     class Meta:
-        verbose_name = ("studentdata")
-        verbose_name_plural = ("studentdatas")
+        verbose_name = ("Student Mark List")
+        verbose_name_plural = ("Student Mark lists")
 
     def __str__(self):
         return self.name
