@@ -34,8 +34,8 @@
 
     <div class="m-4 p-2">
 
-        <div><b>Name : </b><span>Gabirial Raj.s</span></div>
-        <div><b>Department : </b><span>Computer Scince</span></div>
+        <div><b>Name : </b><span>{{data.name}}</span></div>
+        <div><b>Department : </b><span>{{deportment}}</span></div>
     </div>
       
     
@@ -52,52 +52,52 @@
         </thead>
         <tr>
             <th>Educational Psychology</th>
-            <td>30</td>
-            <td>14</td>
-            <td>-3</td>
-            <td>41</td>
+            <td>{{data.s1T}}</td>
+            <td>{{data.s1A}}</td>
+            <td>{{data.s1LS}}</td>
+            <td>{{data.s1Total}}</td>
         </tr>
         <tr>
             <th>Contemporay India and Education</th>
-            <td>31</td>
-            <td>15</td>
-            <td>-2</td>
-            <td>44</td>
+            <td>{{data.s2T}}</td>
+            <td>{{data.s2A}}</td>
+            <td>{{data.s2LS}}</td>
+            <td>{{data.s2Total}}</td>
         </tr>
         <tr>
             <th>Teaching and Learing</th>
-            <td>33</td>
-            <td>12</td>
-            <td>0</td>
-            <td>45</td>
+            <td>{{data.s3T}}</td>
+            <td>{{data.s3A}}</td>
+            <td>{{data.s3LS}}</td>
+            <td>{{data.s3Total}}</td>
         </tr>
         <tr>
             <th>Language across the Curriculum</th>
-            <td>33</td>
-            <td>12</td>
-            <td>0</td>
-            <td>45</td>
+            <td>{{data.s4T}}</td>
+            <td>{{data.s4A}}</td>
+            <td>{{data.s4LS}}</td>
+            <td>{{data.s4Total}}</td>
         </tr>
         <tr>
-            <th>Pedagogy Subject</th>
-            <td>34</td>
-            <td>11</td>
-            <td>0</td>
-            <td>45</td>
+            <th>{{pedagogy}}</th>
+            <td>{{data.s5T}}</td>
+            <td>{{data.s5A}}</td>
+            <td>{{data.s5LS}}</td>
+            <td>{{data.s5Total}}</td>
         </tr>
         <tr>
             <th>Total</th>
             <td></td>
             <td></td>
             <td></td>
-            <td><b>470</b> </td>
+            <td><b>{{data.total}}</b> </td>
         </tr>
         <tr>
             <th>Percentage</th>
             <td></td>
             <td></td>
             <td></td>
-            <td> <b>85%</b></td>
+            <td> <b>{{data.average}}</b></td>
         </tr>
     </table>
 
