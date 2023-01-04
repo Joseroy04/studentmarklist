@@ -63,6 +63,7 @@ class studentData(models.Model):
        self.s4Total = self.s4A +self.s4LS +self.s4T
        self.s5Total = self.s5A +self.s5LS +self.s5T
        
+       
        self.total = self.s1Total+self.s2Total+self.s3Total+self.s4Total+self.s5Total
        
        self.average = self.total / 5
