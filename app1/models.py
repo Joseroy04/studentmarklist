@@ -31,6 +31,7 @@ class studentData(models.Model):
     s3LS= models.IntegerField(verbose_name="Teaching and Learing Late Submission Penalty Mark ",null=False ,default=0)
     s4LS= models.IntegerField(verbose_name="Language across the Curriculum Late Submission Penalty Mark ",null=False,default=0 )
     s5LS= models.IntegerField(verbose_name="Pedagogy Subject Late Submission Penalty Mark ",null=False ,default=0)
+    
     class Meta:
         verbose_name = ("studentdata")
         verbose_name_plural = ("studentdatas")
