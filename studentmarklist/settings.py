@@ -124,4 +124,4 @@ STATIC_ROOT = 'staticsfiles/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://studentmarklist-production.up.railway.app','http://127.0.0.1:8000/']        
+CSRF_TRUSTED_ORIGINS = ['https://web-production-81f8.up.railway.app','http://127.0.0.1:8000/']        
