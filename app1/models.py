@@ -29,7 +29,7 @@ class studentData(models.Model):
     s4T = models.IntegerField(verbose_name="Language across the Curriculum theary ",null=False )
     s5T = models.IntegerField(verbose_name="Pedagogy Subject theary ",null=False )
     
-    s1A= models.IntegerField(verbose_name="Educational Psychology Assignment ",null=True )
+    s1A= models.IntegerField(verbose_name="Educational Psychology Assignment ",null=True,blank=True )
     s2A= models.IntegerField(verbose_name="Contemporay India and Education Assignment ",null=False )
     s3A= models.IntegerField(verbose_name="Teaching and Learing Assignment ",null=False )
     s4A= models.IntegerField(verbose_name="Language across the Curriculum Assignment ",null=False )
@@ -48,14 +48,14 @@ class studentData(models.Model):
     s5LS= models.IntegerField(verbose_name="Pedagogy Subject Late Submission Penalty Mark ",null=False ,default=0)
     
     
-    s1Total = models.IntegerField(verbose_name="Educational Psychology Total ",null=True,default=0 )
-    s2Total = models.IntegerField(verbose_name="Contemporay India and Education Total ",null=True,default=0 )
-    s3Total = models.IntegerField(verbose_name="Teaching and Learing Total ",null=True ,default=0)
-    s4Total = models.IntegerField(verbose_name="Language across the Curriculum Total ",null=True ,default=0)
-    s5Total = models.IntegerField(verbose_name="Pedagogy Subject Total ",null=True,default=0 )
+    s1Total = models.IntegerField(verbose_name="Educational Psychology Total ",null=True,blank=True,default=0 )
+    s2Total = models.IntegerField(verbose_name="Contemporay India and Education Total ",null=True,blank=True,default=0 )
+    s3Total = models.IntegerField(verbose_name="Teaching and Learing Total ",null=True,blank=True ,default=0)
+    s4Total = models.IntegerField(verbose_name="Language across the Curriculum Total ",null=True,blank=True ,default=0)
+    s5Total = models.IntegerField(verbose_name="Pedagogy Subject Total ",null=True,blank=True,default=0 )
     
-    total = models.IntegerField(verbose_name="Total Mark",null=True,default=0)
-    average = models.DecimalField(verbose_name="Average ",null=True,max_digits=10,decimal_places=3,default=0)
+    total = models.IntegerField(verbose_name="Total Mark",null=True,blank=True,default=0)
+    average = models.DecimalField(verbose_name="Average ",null=True,blank=True,max_digits=10,decimal_places=3,default=0)
     def save(self, *args, **kwargs):
        self.s1Total = self.s1A +self.s1LS +self.s1T
        self.s2Total = self.s2A +self.s2LS +self.s2T
