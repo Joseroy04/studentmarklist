@@ -26,3 +26,7 @@ def marklist (request ):
             return render(request,"marklist.html",{"data":dat[0],"deportment":deportment[0]['name'],"pedagogy":pedagogy[0]['subject']})
         return redirect("home")
     return redirect("home") 
+
+
+def excel(request):
+    return render(request,'excel.html',{})
